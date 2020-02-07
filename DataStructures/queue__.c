@@ -62,7 +62,7 @@ for(count = 0 ; count <info->count_queue ; count++ ){
 int ISFullQ (ST_queueInfo *info){
 
 if ((info->count_queue) == info->size_queue){
-        printf("%d" , info->count_queue);
+       // printf("%d" , info->count_queue);
     //printf("queue is full");
     return 1 ;}
 else

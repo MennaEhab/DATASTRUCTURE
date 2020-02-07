@@ -44,3 +44,39 @@
 	<stdlib.h>
 	<stdio.h>
 
+1581034925 source:e:\sprints\github\datastructure\datastructures\linkedlist.c
+	"LinkedList.h"
+
+1581033972 e:\sprints\github\datastructure\datastructures\linkedlist.h
+	"std_types.h"
+	<stdlib.h>
+	<stdio.h>
+
+1580588345 e:\sprints\github\datastructure\datastructures\std_types.h
+
+1581069104 source:e:\sprints\github\datastructure\datastructures\queue__.c
+	"queue__.h"
+
+1580924335 e:\sprints\github\datastructure\datastructures\queue__.h
+	"std_types.h"
+	<stdlib.h>
+
+1581002743 source:e:\sprints\github\datastructure\datastructures\stack__.c
+	"stack__.h"
+
+1580827686 e:\sprints\github\datastructure\datastructures\stack__.h
+	"std_types.h"
+	<stdlib.h>
+
+1581067883 source:e:\sprints\github\datastructure\datastructures\app.c
+	"stack__.h"
+	"queue__.h"
+	<string.h>
+
+1581069104 source:e:\sprints\github\datastructure\datastructures\main.c
+	<stdio.h>
+	<stdlib.h>
+	"stack__.h"
+	"queue__.h"
+	"LinkedList.h"
+

@@ -28,6 +28,11 @@ long long evaluate(char* expression){
     uint16_t tenth = 1 ;
     uint16_t number = 0 ;
 
+    uint16_t op1 = 0 ;
+    uint16_t op2 = 0 ;
+    uint16_t Operator = 0 ;
+    uint16_t sum =0 ;
+
     createQueue(ptr_myqueue ,1000) ;
 
     int balanced ;
@@ -36,14 +41,13 @@ long long evaluate(char* expression){
     if (balanced == 1)
        {
 
-        printf("unbalanced");
         return 0 ;}
     else if (balanced == 0){
-        printf("balanced");
+
 
 ///////////////////////////calculate expression///////////////////////////////////////
         int expression_counter = 0;
-    printf("Infunc= %c \n",expression[5]) ;
+
         while(expression[expression_counter] != '\0'){
         if (expression[expression_counter]=='('||
             expression[expression_counter]==')'||
@@ -53,21 +57,16 @@ long long evaluate(char* expression){
             expression[expression_counter]=='}'
             ){
                 expression_counter ++;
-             //   printf("brackets = %c \n " , expression[expression_counter]);
+
                  continue ;
             }
 
-
-
-       // printf("\n in the while : %c , count is : %d " , expression[expression_counter] , expression_counter);
-
 // 0 = 48 , 9 =57
         while (expression[expression_counter] > 47  &&expression[expression_counter]<58){
-            //    printf("number i will convert : %c \n" , expression[expression_counter]);
 
                 number +=   ((expression[expression_counter]-48)) ;
                 number *= 10 ;
-            //    printf("expression_counter=%d",expression_counter);
+
                 expression_counter++;
 
         }
@@ -100,27 +99,14 @@ long long evaluate(char* expression){
             expression_counter++;
 
         }
-        /*
-        expression[expression_counter]!='('&&
-            expression[expression_counter]!=')'&&
-            expression[expression_counter]!='['&&
-            expression[expression_counter]!=']'&&
-            expression[expression_counter]!='{'&&
-            expression[expression_counter]!='}'&&
-            expression[expression_counter]!='\0'
-        */
 
-      //  printf("%s" , expression) ;
-        print_queue(ptr_myqueue) ;
-        printf("counter = %d \n" , expression_counter) ;
+
+
 ///////////////queue is ready  calculate //////////////
 
 
 
-    uint16_t op1 = 0 ;
-    uint16_t op2 = 0 ;
-    uint16_t Operator = 0 ;
-    uint16_t sum =0 ;
+
 
     dequeue(ptr_myqueue , &sum) ;
 
@@ -152,8 +138,10 @@ long long evaluate(char* expression){
 
 }///// while end
 
-printf("sum = %d \n " , sum) ;
+
 
         }/// else if brackets
 
+
+        return sum ;
 }

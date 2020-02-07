@@ -8,8 +8,7 @@
 int main()
 {
 
-   // printf("Hello world!\n");
-
+/*
     ST_stackInfo stack1 ;
     int * ptr_x ;
     int x ;
@@ -27,22 +26,27 @@ int main()
     pop(PTR_stack1 , ptr_x);
      pop(PTR_stack1 , ptr_x);
       pop(PTR_stack1 , ptr_x);
-   // pop(PTR_stack1 , ptr_x);
+*/
 
+/////////////check balanced test /////////////
 
-    //printf("Hello world!\n %c " , *ptr_x );
+/*
+char* exp ="(())" ;
 
-   /* balanced = checkForBalancedParantheses("{}(0+3)") ;
-    if (balanced == 0)
-        printf("balanced");
-    else if (balanced == 1)
-        printf("unbalanced");
+balanced = checkForBalancedParantheses(exp) ;
 
+if (balanced == 1)
+       {
+    printf("unbalanced") ;
+       }
+    else if (balanced == 0){
 
+        printf("balanced") ;
+    }
 */
 /////////queue test /////////
 
-
+/*
 ST_queueInfo queue1 ;
 
 ST_queueInfo * ptr_queue1 = &queue1 ;
@@ -61,38 +65,36 @@ enqueue(ptr_queue1 , 5) ;
 enqueue(ptr_queue1 , 6) ;
 enqueue(ptr_queue1 , 7) ;
 enqueue(ptr_queue1 , 8) ;
+print_queue(ptr_queue1);
+*/
+/////////// test evaluation function ///////////
 
-
-//print_queue(ptr_queue1);
-int i = 0 ;
+/*
+long long sum = 0 ;
 char* str1 = "(1*[123])" ;
-//while (str1[i]!= '\0'){
-//
-//    printf("string : %c \n ", str1[i]);
-//    i++;
-//
-//
-//}
-evaluate(str1) ;
 
+sum = evaluate(str1) ;
+
+printf("sum = %lld" , sum);
+*/
+
+////////////////////test linked list /////////////////////
+
+
+/*
 ST_list list1;
+
 ST_list * ptr_list1 = &list1 ;
 
 createList(ptr_list1);
-//printf("linked data : %d \n" ,ptr_list1->head_ptr);
 
-//printf("linked count : %d \n" ,ptr_list1->count_linkedlist);
 insertToList(ptr_list1,1,5);
-//printf("linked count : %d \n" ,ptr_list1->count_linkedlist);
-//printf("linked data : %d \n" ,ptr_list1->head_ptr->Data);
+
 insertToList(ptr_list1,2,10);
-//printf("linked data : %d \n" ,ptr_list1->head_ptr->Next_node->Data);
-//printf("linked count : %d \n" ,ptr_list1->count_linkedlist);
+
 
 insertToList(ptr_list1,3,15);
-//printf("linked data : %d \n" ,ptr_list1->head_ptr->Next_node->Next_node->Data);
 
-//printf("linked count : %d \n" ,ptr_list1->count_linkedlist);
 
 insertToList(ptr_list1,3,20);
 
@@ -103,20 +105,22 @@ printf("linked data : %d \n" ,ptr_list1->head_ptr->Next_node->Data);
 printf("linked data : %d \n" ,ptr_list1->head_ptr->Next_node->Next_node->Data);
 
 printf("linked data : %d \n" ,ptr_list1->head_ptr->Next_node->Next_node->Next_node->Data);
-printf("linked data : %d \n" ,ptr_list1->head_ptr->Next_node->Next_node->Next_node->Next_node);
 
 deleteFromList(ptr_list1,2,&i);
+
 printf("linked data : %d \n" ,ptr_list1->head_ptr->Data);
 
 printf("linked data : %d \n" ,ptr_list1->head_ptr->Next_node->Data);
 
 printf("linked data : %d \n" ,ptr_list1->head_ptr->Next_node->Next_node->Data);
+
 ST_node node2 ;
 ST_node *node2ptr;
 node2ptr = searchIntoList(ptr_list1,20);
+
 printf("node number : %d" , node2ptr->Data);
 
-
+*/
 
     return 0;
 }
