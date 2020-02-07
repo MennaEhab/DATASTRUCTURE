@@ -1,0 +1,46 @@
+# depslib dependency file v1.0
+1581035094 source:e:\sprints\github\datastructures\main.c
+	<stdio.h>
+	<stdlib.h>
+	"stack__.h"
+	"queue__.h"
+	"LinkedList.h"
+
+1580809638 e:\sprints\github\datastructures\stack.h
+	"std_types.h"
+	<stdlib.h>
+
+1580588345 e:\sprints\github\datastructures\std_types.h
+
+1580809508 source:e:\sprints\github\datastructures\stack.c
+	"stack.h"
+
+1580827686 e:\sprints\github\datastructures\stack__.h
+	"std_types.h"
+	<stdlib.h>
+
+1581002743 source:e:\sprints\github\datastructures\stack__.c
+	"stack__.h"
+
+1580892195 source:e:\sprints\github\datastructures\queue.c
+
+1581002150 source:e:\sprints\github\datastructures\queue__.c
+	"queue__.h"
+
+1580924335 e:\sprints\github\datastructures\queue__.h
+	"std_types.h"
+	<stdlib.h>
+
+1581011522 source:e:\sprints\github\datastructures\app.c
+	"stack__.h"
+	"queue__.h"
+	<string.h>
+
+1581034925 source:e:\sprints\github\datastructures\linkedlist.c
+	"LinkedList.h"
+
+1581033972 e:\sprints\github\datastructures\linkedlist.h
+	"std_types.h"
+	<stdlib.h>
+	<stdio.h>
+
